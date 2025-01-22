@@ -34,12 +34,7 @@ body, h1, h2, h3, p, ul, ol, a {
   
   /* Navbar */
   .navbar {
-    border-bottom: 2px solid #ddd;
-  }
-  
-  .navbar-brand {
-    font-weight: 700;
-    color: #4a90e2 !important;
+    border-bottom: 2px solid #9e9e9e;
   }
   
   .nav-link {
@@ -50,6 +45,16 @@ body, h1, h2, h3, p, ul, ol, a {
   .nav-link:hover {
     color: #4a90e2;
   }
+  
+  .nav-link.active {
+    font-weight: bold;
+    color: #4a90e2 !important;
+  }
+
+  .navbar-toggler:hover {
+  background-color: #4a90e2;
+  border-color: #245a82;
+}
   
   /* Main Content */
   main {
@@ -68,10 +73,9 @@ body, h1, h2, h3, p, ul, ol, a {
   }
   
   main img {
-    border: 5px solid #ddd;
-    border-radius: 8px;
-    margin-top: 1rem;
-  }
+    max-width: 100%;
+    height: auto;
+  }  
   
   /* Buttons */
   .btn-primary {
@@ -145,4 +149,14 @@ body, h1, h2, h3, p, ul, ol, a {
       font-size: 0.9rem;
     }
   }
+  footer i {
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    footer i {
+      font-size: 1.2rem;
+    }
+  }
+  
   
